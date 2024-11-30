@@ -9,13 +9,16 @@
       />
       <span class="slider">
         <span class="icon-left">EN</span>
-        <span class="icon-right">HI</span>
+        <span class="icon-right">अ</span>
       </span>
     </label>
   </div>
 
   <!-- Landing Card -->
   <div class="landing-card" (click)="navigateToFamilyTree()">
-    <h1>{{ isHindi ? 'मोदानी परिवार' : 'Modani Family' }}</h1>
+    <h1>
+      <span>{{ isHindi ? 'मोदानी परिवार' : 'Modani Family' }}</span><br>
+      <span>{{ isHindi ? 'सांडिल्य गोत्र' : 'Sandilya Gotra' }}</span>
+    </h1>
   </div>
 </div>

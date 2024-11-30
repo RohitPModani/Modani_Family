@@ -1,15 +1,17 @@
 <div class="app-container">
+  <!-- Breadcrumb Section -->
   <div class="breadcrumb-container">
     <div class="home-button" (click)="navigateToLanding()">
-      <i class="fas fa-home"></i> <!-- Font Awesome home icon -->
+      <i class="fas fa-home"></i>
     </div>
     <div class="breadcrumbs">
       <span
         *ngFor="let breadcrumb of breadcrumbs; let i = index"
         (click)="navigateToBreadcrumb(i)"
         [class.active]="i === breadcrumbs.length - 1"
+        [id]="'breadcrumb-' + i" 
       >
-        {{ getMemberName(breadcrumb) }}
+        {{ getBreadcrumbMemberName(breadcrumb) }}
       </span>
     </div>
   </div>
@@ -22,17 +24,36 @@
 
   <!-- Family Tree Content -->
   <ng-template #familyTreeContent>
-    <div class="card">
-      <h1>{{ getMemberName(currentMember!) }}</h1>
-    </div>
+    <div class="family-tree-container">
+      <!-- Parent Card with Click Event -->
+      <div class="card parent-card" (click)="navigateToParent()">
+        <h1>{{ getMemberName(currentMember!) }}</h1>
+      </div>
 
-    <div
-      class="child-card"
-      *ngFor="let child of currentMember?.children?.childList"
-      [ngClass]="{ 'disabled': !child?.children?.childList?.length }"
-      (click)="!child?.children?.childList?.length || selectChild(child)"
-    >
-      <h3>{{ getMemberName(child) }}</h3>
+      <!-- Child Cards with Connection Lines -->
+      <div class="child-cards-container">
+        <div
+          class="child-card"
+          *ngFor="let child of currentMember?.children?.childList"
+          [ngClass]="{ 'disabled': !child?.children?.childList?.length }"
+          (click)="!child?.children?.childList?.length || selectChild(child)"
+        >
+          <h3>{{ getMemberName(child) }}</h3>
+        </div>
+      </div>
+
+      <!-- Additional Card for Nand Ram Ji -->
+      <div class="extra-card" *ngIf="currentMember?.name === 'Nand Ram Ji'">
+        <h2>
+          {{ isHindi ? 'पता: पुराना पेढ़ी (दुकान)' : 'Address: Old Peddi (Shop)' }}
+        </h2>
+        <p>
+          {{ isHindi ? 'नंदराम मुलचंद: बंबई' : 'Nandram Mulchand: Bombay' }}
+        </p>
+        <p>
+          {{ isHindi ? 'मय्याराम मुलचंद: बारसी, लातूर, मदनूर (महाराष्ट्र) और हैदराबाद' : 'Mayyaram Mulchand: Barsi, Latur, Madnoor (Maharashtra) & Hyderabad' }}
+        </p>
+      </div>
     </div>
   </ng-template>
 

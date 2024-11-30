@@ -8,18 +8,26 @@
   --home-button-size: 30px; /* Home button size */
 }
 
+/* Prevent Vertical Overflow */
+html, body {
+  height: 100%; /* Ensure full height */
+  overflow: hidden; /* Prevent vertical scrolling */
+}
+
 .app-container {
   min-height: 100vh; /* Ensure full-screen height */
   background: var(--background); /* Unified background */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stacks cards vertically */
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden; /* Prevent vertical scrolling from app container */
+  overflow-y: auto; /* Allow vertical scrolling if content overflows */
+  overflow-x: hidden;
 }
 
+/* Breadcrumb container styles */
 .breadcrumb-container {
-  width: 100%; /* Breadcrumb spans the full screen width */
+  width: calc(100% - 20px);
   padding: 10px 20px; /* Padding for spacing */
   background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
   display: flex;
@@ -29,6 +37,7 @@
   white-space: nowrap; /* Prevent wrapping of breadcrumb items */
 }
 
+/* Home button styling */
 .breadcrumb-container .home-button {
   display: flex;
   justify-content: center;
@@ -40,15 +49,17 @@
   transition: background-color 0.3s ease;
 }
 
+/* Breadcrumb items */
 .breadcrumb-container .breadcrumbs {
   display: flex;
   align-items: center;
   gap: 8px;
   overflow-x: auto; /* Allow horizontal scrolling */
   flex: 1; /* Take up remaining space */
-  color: var(--breadcrumb-color);
+  color: white;
 }
 
+/* Active breadcrumb item */
 .breadcrumb-container .breadcrumbs .active {
   color: var(--breadcrumb-active-color);
   font-weight: bold;
@@ -62,6 +73,7 @@
   transition: color 0.2s ease;
 }
 
+/* Hover effect on breadcrumb items */
 .breadcrumb-container .breadcrumbs span:hover {
   color: var(--breadcrumb-active-color); /* Highlight color on hover */
 }
@@ -76,6 +88,29 @@
   content: ''; /* Remove the separator for the last item */
 }
 
+/* Card container styling for vertical layout */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Connecting vertical lines */
+.card-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  background-color: #ffffff; /* Line color */
+  z-index: -1; /* Place line behind the cards */
+}
+
 .card,
 .child-card {
   width: 100%; /* Full width of the parent container */
@@ -83,7 +118,7 @@
   margin: 15px auto; /* Center the card horizontally */
   padding: 20px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.2); /* Slightly dark transparent background */
+  background: rgba(0, 0, 0, 0.4); /* Slightly dark transparent background */
   backdrop-filter: blur(10px); /* Glass effect */
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -91,16 +126,20 @@
   -webkit-backdrop-filter: blur(10px); /* Frosted glass for Safari */
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  cursor: pointer;
 }
 
 .child-card {
-  cursor: pointer;
-
   &.disabled {
-    cursor: not-allowed; /* Change cursor to indicate it's not clickable */
-    opacity: 0.8; /* Dim the card to indicate it's inactive */
+    cursor: not-allowed; /* Disable clickable cards */
+    opacity: 0.8;
     pointer-events: none; /* Disable all interactions */
   }
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
 }
 
 .child-card:hover {
@@ -112,9 +151,31 @@
 .child-card h3 {
   margin: 0;
   text-align: center;
-  color: #ffffff /* Text color */
+  color: #ffffff;
 }
 
+.extra-card {
+  width: 100%; /* Full width of the parent container */
+  max-width: 600px; /* Limit maximum width to 600px */
+  margin: 15px auto; /* Center the card horizontally */
+  padding: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4); /* Slightly dark transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px); /* Frosted glass for Safari */
+  box-sizing: border-box;
+}
+
+.extra-card h2, p, p {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Skeleton loader styling */
 .skeleton-container {
   width: 100%; /* Full width */
   max-width: 600px; /* Match max-width of cards */
@@ -133,6 +194,67 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Family Tree Connection Styles */
+.family-tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.family-tree-container .parent-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.family-tree-container .child-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  /* Add this to ensure child cards span the full width */
+  width: 100%; /* Ensure the container spans the full width */
+  max-width: 600px; /* Match the parent card's max-width */
+}
+
+.family-tree-container .child-cards-container::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.family-tree-container .child-cards-container::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+
+.family-tree-container .child-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
 /* Skeleton animation */
 @keyframes skeleton-loading {
   from {
@@ -143,11 +265,12 @@
   }
 }
 
+/* Floating action button (FAB) styling */
 .fab {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.2); /* Slightly dark transparent background */
+  background: rgba(0, 0, 0, 0.5); /* Slightly dark transparent background */
   backdrop-filter: blur(10px); /* Glass effect */
   color: white;
   border-radius: 50%;
@@ -167,6 +290,7 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Back to landing page button */
 .back-to-landing {
   position: fixed;
   top: 20px; /* Adjust vertical position */
@@ -196,11 +320,15 @@
 /* Responsive Styles for Small Screens */
 @media (max-width: 768px) {
   .card,
-  .child-card {
-    width: 90%; /* Adjust to 90% width for better responsiveness */
-    padding: 15px; /* Slightly reduce padding */
+  .child-card,
+  .extra-card {
+    width: 85%;
+    padding: 15px;
   }
 
+  .family-tree-container .parent-card {
+    width: 90%;
+  }
   .fab {
     height: 45px;
     width: 45px; /* Slightly smaller floating button */
@@ -218,10 +346,4 @@
   .breadcrumb-container .breadcrumbs span {
     font-size: 0.9rem; /* Slightly smaller breadcrumb text */
   }
-}
-
-/* Prevent Vertical Overflow */
-html, body {
-  height: 100%; /* Ensure full height */
-  overflow: hidden; /* Prevent vertical scrolling */
 }

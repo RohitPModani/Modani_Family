@@ -14,8 +14,8 @@
           "childList": [
             {
               "id": "PukhlalSablaJi",
-              "name": "Sabla Ji",
-              "nameHindi": "सबला जी",
+              "name": "Sabla Ji - In 1879 shifted from Borwa to Mundawa",
+              "nameHindi": "सबला जी - १८७९ में बोरवा से मुंडवा आ गये",
               "children": {
                 "childId": "PukhlalSablaJi-Kids",
                 "childList": [
@@ -51,8 +51,8 @@
                                   "childList": [
                                     {
                                       "id": "ChaturRaghunathJi",
-                                      "name": "Raghunath Ji",
-                                      "nameHindi": "रघुनाथ जी",
+                                      "name": "Raghunath Ji (Adopted)",
+                                      "nameHindi": "रघुनाथ जी (दत्तक)",
                                       "children": {
                                         "childId": "ChaturRaghunathJi-Kids",
                                         "childList": [
@@ -65,29 +65,29 @@
                                               "childList": [
                                                 {
                                                   "id": "RamSrinivasJi",
-                                                  "name": "Srinivas Ji - Kameri Bai (Inani)",
-                                                  "nameHindi": "श्रीनिवास जी - कामेरी बाई (इनानी)",
+                                                  "name": "Srinivas Ji (Adopted) - Kameri Bai (Inani)",
+                                                  "nameHindi": "श्रीनिवास जी (दत्तक) - कामेरी बाई (इनानी)",
                                                   "children": {
                                                     "childId": "RamSrinivasJi-Kids",
                                                     "childList": [
                                                       {
                                                         "id": "SrinivasSrivallabhJi",
-                                                        "name": "Srivallabh Ji - Kamala Bai (Bajaj)",
-                                                        "nameHindi": "श्रीवल्लभ जी - कमला बाई (बजाज)",
+                                                        "name": "Srivallabh Ji (Adopted) - Kamala Bai (Bajaj)",
+                                                        "nameHindi": "श्रीवल्लभ जी (दत्तक) - कमला बाई (बजाज)",
                                                         "children": {
                                                           "childId": "SrinivasSrivallabhJi-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "SrivallabhOmPrakash",
                                                               "name": "Om Prakash - Premlatha (Kankani)",
-                                                              "nameHindi": "ओम प्रकाश - प्रेमलता (कंकाणी)",
+                                                              "nameHindi": "ओम प्रकाश - प्रेमलता (कांकाणी)",
                                                               "children": {
                                                                 "childId": "SrivallabhOmPrakash-Kids",
                                                                 "childList": [
                                                                   {
                                                                     "id": "OmPrakashMeena",
                                                                     "name": "Meena - Pavan Navander (Hyderabad)",
-                                                                    "nameHindi": "मीना - पवन नवांदर (हैदराबाद)",
+                                                                    "nameHindi": "मीना - पवन नावंदर (हैदराबाद)",
                                                                     "children": {
                                                                       "childId": "OmPrakashMeena-Kids",
                                                                       "childList": []
@@ -189,36 +189,36 @@
                                                               }
                                                             },
                                                             {
-                                                              "id": "SrivallabhLakshmikanth",
-                                                              "name": "Lakshmi Kanth - Sunitha (Latoria)",
-                                                              "nameHindi": "लक्ष्मी कंठ - सुनीता (लटोरिया)",
+                                                              "id": "SrivallabhLakshmikant",
+                                                              "name": "Lakshmi Kant - Sunitha (Laturia)",
+                                                              "nameHindi": "लक्ष्मी कांत - सुनीता (लाटुरिया)",
                                                               "children": {
-                                                                "childId": "SrivallabhLakshmikanth-Kids",
+                                                                "childId": "SrivallabhLakshmikant-Kids",
                                                                 "childList": [
                                                                   {
-                                                                    "id": "LakshmikanthRadhika",
+                                                                    "id": "LakshmikantRadhika",
                                                                     "name": "Radhika - Ranganath Sarda (Shahbad)",
                                                                     "nameHindi": "राधिका - रंगनाथ सारडा (शाहबाद)",
                                                                     "children": {
-                                                                      "childId": "LakshmikanthRadhika-Kids",
+                                                                      "childId": "LakshmikantRadhika-Kids",
                                                                       "childList": []
                                                                     }
                                                                   },
                                                                   {
-                                                                    "id": "LakshmikanthPriyanka",
+                                                                    "id": "LakshmikantPriyanka",
                                                                     "name": "Priyanka",
                                                                     "nameHindi": "प्रियंका",
                                                                     "children": {
-                                                                      "childId": "LakshmikanthPriyanka-Kids",
+                                                                      "childId": "LakshmikantPriyanka-Kids",
                                                                       "childList": []
                                                                     }
                                                                   },
                                                                   {
-                                                                    "id": "LakshmikanthYashika",
+                                                                    "id": "LakshmikantYashika",
                                                                     "name": "Yashika",
                                                                     "nameHindi": "याशिका",
                                                                     "children": {
-                                                                      "childId": "LakshmikanthYashika-Kids",
+                                                                      "childId": "LakshmikantYashika-Kids",
                                                                       "childList": []
                                                                     }
                                                                   }
@@ -228,7 +228,7 @@
                                                             {
                                                               "id": "SrivallabhGopiKishan",
                                                               "name": "Gopi Kishan - Geetha (Navander)",
-                                                              "nameHindi": "गोपी किशन - गीता (नवंदर)",
+                                                              "nameHindi": "गोपी किशन - गीता (नावंदर)",
                                                               "children": {
                                                                 "childId": "SrivallabhGopiKishan-Kids",
                                                                 "childList": [
@@ -286,7 +286,7 @@
                                                             {
                                                               "id": "GovindLalKamalKishore",
                                                               "name": "Kamal Kishore - Leela (Bang)",
-                                                              "nameHindi": "कमल किशोर - लीला (बैंग)",
+                                                              "nameHindi": "कमल किशोर - लीला (बंग)",
                                                               "children": {
                                                                 "childId": "GovindLalKamalKishore-Kids",
                                                                 "childList": [
@@ -341,7 +341,7 @@
                                                             {
                                                               "id": "GovindLalRanjana",
                                                               "name": "Ranjana - Om Prakash Attal (Aurangabad)",
-                                                              "nameHindi": "रंजना - ओम प्रकाश अटल (औरंगाबाद)",
+                                                              "nameHindi": "रंजना - ओम प्रकाश अट्टल (औरंगाबाद)",
                                                               "children": {
                                                                 "childId": "GovindLalRanjana-Kids",
                                                                 "childList": []
@@ -350,7 +350,7 @@
                                                             {
                                                               "id": "GovindLalKiran",
                                                               "name": "Kiran - Damodar Kalani",
-                                                              "nameHindi": "किरण - दामोदर कलानी",
+                                                              "nameHindi": "किरण - दामोदर कालानी",
                                                               "children": {
                                                                 "childId": "GovindLalKiran-Kids",
                                                                 "childList": []
@@ -362,14 +362,14 @@
                                                       {
                                                         "id": "RamKunwarRamnarayanJi",
                                                         "name": "Ram Narayan Ji - Shantha Bai (Palod)",
-                                                        "nameHindi": "राम नारायण जी - शांता बाई (पालोद)",
+                                                        "nameHindi": "राम नारायण जी - शांता बाई (पलोड)",
                                                         "children": {
                                                           "childId": "RamKunwarRamnarayanJi-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "RamnarayanPrakash",
                                                               "name": "Prakash Chand - Srikantha (Kalantri)",
-                                                              "nameHindi": "प्रकाश चंद - श्रीकांत (कलंत्री)",
+                                                              "nameHindi": "प्रकाश चंद - श्रीकांता (कलंत्री)",
                                                               "children": {
                                                                 "childId": "RamnarayanPrakash-Kids",
                                                                 "childList": [
@@ -575,23 +575,23 @@
                                                   }
                                                 },
                                                 {
-                                                  "id": "ChunniRamVilasJi",
-                                                  "name": "Ram Vilas Ji - Shantha (Rathi)",
-                                                  "nameHindi": "राम विलास जी - शांता (राठी)",
+                                                  "id": "ChunniRamBilasJi",
+                                                  "name": "Ram Bilas Ji - Shantha (Rathi)",
+                                                  "nameHindi": "राम बिलास जी - शांता (राठी)",
                                                   "children": {
-                                                    "childId": "ChunniRamVilasJi-Kids",
+                                                    "childId": "ChunniRamBilasJi-Kids",
                                                     "childList": [
                                                       {
-                                                        "id": "RamVilasBharath",
+                                                        "id": "RamBilasBharath",
                                                         "name": "Bharath Kumar - Madhuri (Mundada)",
-                                                        "nameHindi": "भरत कुमार-माधुरी (मुंडाडा)",
+                                                        "nameHindi": "भरत कुमार - माधुरी (मुंदडा)",
                                                         "children": {
-                                                          "childId": "RamVilasBharath-Kids",
+                                                          "childId": "RamBilasBharath-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "BharathRohit",
-                                                              "name": "Late. Rohit - Leena (Maheshwari) ",
-                                                              "nameHindi": "स्व. रोहित - लीना (माहेश्वरी)",
+                                                              "name": "Late. Rohit - Leena (Chaichani - Maheshwari) ",
+                                                              "nameHindi": "स्व. रोहित - लीना (चाईचानी - माहेश्वरी)",
                                                               "children": {
                                                                 "childId": "BharathRohit-Kids",
                                                                 "childList": [
@@ -630,11 +630,11 @@
                                                         }
                                                       },
                                                       {
-                                                        "id": "RamVilasPradeep",
+                                                        "id": "RamBilasPradeep",
                                                         "name": "Pradeep - Uma (Mundada)",
                                                         "nameHindi": "प्रदीप - उमा (मुंदडा)",
                                                         "children": {
-                                                          "childId": "RamVilasPradeep-Kids",
+                                                          "childId": "RamBilasPradeep-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "PradeepSonal",
@@ -687,8 +687,8 @@
                                                       },
                                                       {
                                                         "id": "RamVilasShobha",
-                                                        "name": "Shobha - Narayan Chandak (Kota)",
-                                                        "nameHindi": "शोभा - नारायण चांडक (कोटा)",
+                                                        "name": "Shobha - Shrinarayanji Chandak (Kota)",
+                                                        "nameHindi": "शोभा - श्रीनारायणजी चांडक (कोटा)",
                                                         "children": {
                                                           "childId": "RamVilasShobha-Kids",
                                                           "childList": []
@@ -719,14 +719,14 @@
                                                 {
                                                   "id": "RamChandraMohanLalJi",
                                                   "name": "Mohan Lal Ji - Mohini Bai (Kabra) / Kesar Bai (Sarda)",
-                                                  "nameHindi": "मोहन लाल जी - मोहिनी बाई (काबरा) / केसर बाई (सरदा)",
+                                                  "nameHindi": "मोहन लाल जी - मोहिनी बाई (काबरा) / केसर बाई (सारडा)",
                                                   "children": {
                                                     "childId": "RamChandraMohanLalJi-Kids",
                                                     "childList": [
                                                       {
                                                         "id": "MohanLalRajKanwariBai",
-                                                        "name": "Raj Kanwari Bai - Jawarilal Gilda (Vijaywada)",
-                                                        "nameHindi": "राज कंवरी बाई - जवारीलाल गिल्डा (विजयवाड़ा)",
+                                                        "name": "Raj Kanwari Bai - Jawrilal Gilda (Vijaywada)",
+                                                        "nameHindi": "राज कंवारी बाई - जवरीलाल गिल्डा (विजयवाड़ा)",
                                                         "children": {
                                                           "childId": "MohanLalRajKanwariBai-Kids",
                                                           "childList": []
@@ -734,8 +734,8 @@
                                                       },
                                                       {
                                                         "id": "MohanLalManKanwari",
-                                                        "name": "Man Kanwari - Nand Kishore Bhattad (Ujjain)",
-                                                        "nameHindi": "मन कंवारी - नंद किशोर भट्टड़ (उज्जैन)",
+                                                        "name": "Mankanwari - Nand Kishore Bhattad (Ujjain)",
+                                                        "nameHindi": "मनकंवरी - नंद किशोर भट्टड़ (उज्जैन)",
                                                         "children": {
                                                           "childId": "MohanLalManKanwari-Kids",
                                                           "childList": []
@@ -760,19 +760,38 @@
                                                             {
                                                               "id": "RamKishoreAarthi",
                                                               "name": "Aarthi - Anand Sanghi (Jaju)",
-                                                              "nameHindi": "आरती - आनंद सांघी (जाजू)",
+                                                              "nameHindi": "आरती - आनंद संघी (जाजू)",
                                                               "children": {
                                                                 "childId": "RamKishoreAarthi-Kids",
                                                                 "childList": []
                                                               }
                                                             },
                                                             {
-                                                              "id": "RamKishoreKrishnaKanth",
-                                                              "name": "Krishnakanth - Archana (Mantri)",
+                                                              "id": "RamKishoreKrishnakant",
+                                                              "name": "Krishnakant - Archana (Mantri)",
                                                               "nameHindi": "कृष्णकांत - अर्चना (मंत्री)",
                                                               "children": {
-                                                                "childId": "RamKishoreKrishnaKanth-Kids",
-                                                                "childList": []
+                                                                "childId": "RamKishoreKrishnakant-Kids",
+                                                                "childList": [
+                                                                  {
+                                                                    "id": "KrishnakantRaghav",
+                                                                    "name": "Raghav",
+                                                                    "nameHindi": "राघव",
+                                                                    "children": {
+                                                                      "childId": "KrishnakantRaghav-Kids",
+                                                                      "childList": []
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "id": "KrishnakantAditi",
+                                                                    "name": "Aditi",
+                                                                    "nameHindi": "अदिति",
+                                                                    "children": {
+                                                                      "childId": "KrishnakantAditi-Kids",
+                                                                      "childList": []
+                                                                    }
+                                                                  }
+                                                                ]
                                                               }
                                                             }
                                                           ]
@@ -869,8 +888,8 @@
                                           },
                                           {
                                             "id": "RaghuChandiBai",
-                                            "name": "Chandi Bai Rathi (Amaravathi)",
-                                            "nameHindi": "चंडी बाई राठी (अमरावती)",
+                                            "name": "Chandri Bai Rathi (Amaravati)",
+                                            "nameHindi": "चंद्री बाई राठी (अमरावती)",
                                             "children": {
                                               "childId": "RaghuChandiBai-Kids",
                                               "childList": []
