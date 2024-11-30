@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: var(--background) ;
+  background: var(--background);
   flex-direction: column; /* Stack the toggle and card vertically */
   gap: 30px; /* Space between toggle and card */
   padding: 20px;
@@ -26,6 +26,11 @@
   justify-content: center;
   align-items: center;
   z-index: 10; /* Ensure it appears above other elements */
+  background: rgba(0, 0, 0, 0.2); /* Slightly dark transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .language-toggle .switch {
@@ -48,7 +53,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: linear-gradient(135deg, #8aaed0, #bfe3ea); /* Light blue background */
   transition: background-color 0.3s ease;
   border-radius: 50px;
   box-shadow: 0 3px 6px var(--shadow-color);
@@ -71,13 +75,17 @@
   transform: translateX(40px); /* Move the switch knob */
 }
 
-.icon-left, .icon-right {
+.icon-left,
+.icon-right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .icon-left {
@@ -88,12 +96,6 @@
 .icon-right {
   right: 10px;
   transition: opacity 0.3s ease;
-}
-
-.flag-icon {
-  width: 20px;
-  height: 15px;
-  object-fit: cover;
 }
 
 .landing-card {
