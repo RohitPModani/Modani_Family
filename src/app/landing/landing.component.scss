@@ -1,0 +1,135 @@
+:root {
+  --background: linear-gradient(135deg, #8aaed0, #bfe3ea); /* Elegant cyan-blue gradient */
+  --card-background: rgba(255, 255, 255, 0.8); /* Slightly transparent white for glassmorphism effect */
+  --shadow-color: rgba(0, 0, 0, 0.2); /* Soft shadow */
+  --primary-color: #34495e; /* Elegant dark color for text */
+}
+
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background) ;
+  flex-direction: column; /* Stack the toggle and card vertically */
+  gap: 30px; /* Space between toggle and card */
+  padding: 20px;
+  position: relative; /* Ensures child absolute positioning works */
+  overflow: hidden; /* For better aesthetics if content overflows */
+}
+
+.language-toggle {
+  position: absolute; /* Position the toggle in the top-right corner */
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+.language-toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+}
+
+.language-toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.language-toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: linear-gradient(135deg, #8aaed0, #bfe3ea); /* Light blue background */
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px var(--shadow-color);
+}
+
+.language-toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-toggle input:checked + .slider:before {
+  transform: translateX(40px); /* Move the switch knob */
+}
+
+.icon-left, .icon-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-left {
+  left: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.icon-right {
+  right: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+}
+
+.landing-card {
+  padding: 30px 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2); /* Slightly dark transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  max-width: 400px; /* Limit the size of the card */
+  width: 100%;
+  max-height: 100vh;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-card {
+    padding: 20px 30px;
+    max-width: 90%; /* Allow card to use more space on smaller screens */
+    font-size: 2rem;
+  }
+}

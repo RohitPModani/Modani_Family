@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #4a90e2;
+  --background: linear-gradient(135deg, #8aaed0, #bfe3ea);
+  --card-background: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background: var(--background);
+}
+
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

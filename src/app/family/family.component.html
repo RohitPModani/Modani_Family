@@ -1,0 +1,41 @@
+<div class="app-container">
+  <div class="breadcrumb-container">
+    <div class="home-button" (click)="navigateToLanding()">
+      <i class="fas fa-home"></i> <!-- Font Awesome home icon -->
+    </div>
+    <div class="breadcrumbs">
+      <span
+        *ngFor="let breadcrumb of breadcrumbs; let i = index"
+        (click)="navigateToBreadcrumb(i)"
+        [class.active]="i === breadcrumbs.length - 1"
+      >
+        {{ getMemberName(breadcrumb) }}
+      </span>
+    </div>
+  </div>
+
+  <!-- Skeleton Loader Section -->
+  <div *ngIf="!currentMember; else familyTreeContent" class="skeleton-container">
+    <div class="card skeleton"></div>
+    <div class="child-card skeleton" *ngFor="let n of [1, 2, 3, 4]"></div>
+  </div>
+
+  <!-- Family Tree Content -->
+  <ng-template #familyTreeContent>
+    <div class="card">
+      <h1>{{ getMemberName(currentMember!) }}</h1>
+    </div>
+
+    <div
+      class="child-card"
+      *ngFor="let child of currentMember?.children?.childList"
+      [ngClass]="{ 'disabled': !child?.children?.childList?.length }"
+      (click)="!child?.children?.childList?.length || selectChild(child)"
+    >
+      <h3>{{ getMemberName(child) }}</h3>
+    </div>
+  </ng-template>
+
+  <!-- Floating Action Button -->
+  <button class="fab" (click)="navigateToRoot()">&#8593;</button>
+</div>

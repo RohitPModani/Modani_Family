@@ -1,0 +1,13 @@
+<div class="breadcrumbs">
+  <ng-container *ngFor="let breadcrumb of breadcrumbs; let i = index">
+    <span
+      *ngIf="breadcrumb"
+      (click)="onBreadcrumbClick(i)"
+      class="breadcrumb-item"
+      [class.active]="i === breadcrumbs.length - 1"
+    >
+      {{ getBreadcrumbName(breadcrumb) }}
+    </span>
+    <span *ngIf="i !== breadcrumbs.length - 1" class="breadcrumb-separator">/</span>
+  </ng-container>
+</div>

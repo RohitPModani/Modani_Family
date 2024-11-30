@@ -1,0 +1,33 @@
+<div class="landing-container">
+  <!-- Language Toggle Section -->
+  <div class="language-toggle">
+    <label class="switch">
+      <input
+        type="checkbox"
+        (change)="toggleLanguage($event)"
+        [checked]="isHindi"
+      />
+      <span class="slider">
+        <span class="icon-left">
+          <img
+            src="../../assets/flags/english-flag.png"
+            alt="English Flag"
+            class="flag-icon"
+          />
+        </span>
+        <span class="icon-right">
+          <img
+            src="../../assets/flags/hindi-flag.png"
+            alt="Hindi Flag"
+            class="flag-icon"
+          />
+        </span>
+      </span>
+    </label>
+  </div>
+
+  <!-- Landing Card -->
+  <div class="landing-card" (click)="navigateToFamilyTree()">
+    <h1>{{ isHindi ? 'मोदानी परिवार' : 'Modani Family' }}</h1>
+  </div>
+</div>

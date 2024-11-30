@@ -1,0 +1,59 @@
+.breadcrumbs {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents breadcrumb items from wrapping */
+  font-size: 16px;
+  font-weight: 500;
+  gap: 10px; /* Space between items */
+  padding: 10px; /* Padding around the breadcrumb bar */
+
+  /* Scrollbar for Firefox */
+  scrollbar-width: thin !important; /* Thin scrollbar for Firefox */
+  scrollbar-color: rgba(136, 136, 136, 0.3) rgba(240, 240, 240, 0.1) !important; /* Thumb and track colors for Firefox */
+
+  /* Scrollbar styles for Webkit browsers (Chrome, Safari, etc.) */
+  &::-webkit-scrollbar {
+    height: 2px !important; /* Very thin scrollbar for Webkit browsers */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(136, 136, 136, 0.3) !important; /* Light gray thumb color */
+    border-radius: 10px !important; /* Rounded corners */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(240, 240, 240, 0.1) !important; /* Very light track color */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(136, 136, 136, 0.5) !important; /* Darker thumb color on hover */
+  }
+
+  .breadcrumb-item {
+    cursor: pointer;
+    color: #007bff; /* Default text color (blue) */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #0056b3; /* Darker blue on hover */
+    }
+
+    &.active {
+      color: #000; /* Active breadcrumb text color (black) */
+      font-weight: bold; /* Bold for active */
+    }
+  }
+
+  .breadcrumb-separator {
+    color: #666; /* Separator color */
+    padding: 0 5px; /* Space around separators */
+  }
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    font-size: 14px; /* Smaller font size */
+    gap: 5px; /* Reduced spacing */
+    padding: 8px; /* Adjust padding for mobile view */
+  }
+}
