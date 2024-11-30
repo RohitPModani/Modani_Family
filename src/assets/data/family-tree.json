@@ -240,6 +240,15 @@
                                                                       "childId": "GopiKishanManish-Kids",
                                                                       "childList": []
                                                                     }
+                                                                  },
+                                                                  {
+                                                                    "id": "GopiKishanTarun",
+                                                                    "name": "Tarun - Prerna (Bang)",
+                                                                    "nameHindi": "तरुण - प्रेरणा (बंग)",
+                                                                    "children": {
+                                                                      "childId": "GopiKishanTarun-Kids",
+                                                                      "childList": []
+                                                                    }
                                                                   }
                                                                 ]
                                                               }
@@ -302,7 +311,7 @@
                                                                   {
                                                                     "id": "KamalKishoreTarkesh",
                                                                     "name": "Tarkesh",
-                                                                    "nameHindi": "तारकेश",
+                                                                    "nameHindi": "तरकेश",
                                                                     "children": {
                                                                       "childId": "KamalKishoreTarkesh-Kids",
                                                                       "childList": []
