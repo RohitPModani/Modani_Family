@@ -10,12 +10,14 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%; /* Ensure container spans the entire viewport width */
   background: var(--background);
   flex-direction: column; /* Stack the toggle and card vertically */
   gap: 30px; /* Space between toggle and card */
   padding: 20px;
   position: relative; /* Ensures child absolute positioning works */
-  overflow: hidden; /* For better aesthetics if content overflows */
+  overflow: hidden; /* Prevent content overflow */
+  box-sizing: border-box; /* Include padding in width/height calculations */
 }
 
 .language-toggle {
@@ -112,7 +114,8 @@
   text-align: center;
   max-width: 400px; /* Limit the size of the card */
   width: 100%;
-  max-height: 100vh;
+  box-sizing: border-box; /* Include padding in width */
+  flex-shrink: 0; /* Prevent shrinking in case of small screen */
 
   h1 {
     margin: 0;
@@ -128,10 +131,22 @@
   }
 }
 
+@media (max-height: 600px) {
+  .landing-container {
+    gap: 20px; /* Adjust gap for smaller heights */
+  }
+
+  .landing-card {
+    padding: 20px 30px;
+    h1 {
+      font-size: 2rem; /* Adjust font size for smaller heights */
+    }
+  }
+}
+
 @media (max-width: 600px) {
   .landing-card {
     padding: 20px 30px;
     max-width: 90%; /* Allow card to use more space on smaller screens */
-    font-size: 2rem;
   }
 }
