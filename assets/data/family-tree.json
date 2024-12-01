@@ -14,8 +14,8 @@
           "childList": [
             {
               "id": "PukhlalSablaJi",
-              "name": "Sabla Ji - In 1879 shifted from Borwa to Mundawa",
-              "nameHindi": "सबला जी - १८७९ में बोरवा से मुंडवा आ गये",
+              "name": "Sabla Ji",
+              "nameHindi": "सबला जी",
               "children": {
                 "childId": "PukhlalSablaJi-Kids",
                 "childList": [
@@ -206,8 +206,8 @@
                                                                   },
                                                                   {
                                                                     "id": "LakshmikantPriyanka",
-                                                                    "name": "Priyanka",
-                                                                    "nameHindi": "प्रियंका",
+                                                                    "name": "Priyanka - Aman Chaudhari (Hyderabad)",
+                                                                    "nameHindi": "प्रियंका - अमन चौधरी (हैदराबाद)",
                                                                     "children": {
                                                                       "childId": "LakshmikantPriyanka-Kids",
                                                                       "childList": []
@@ -358,8 +358,8 @@
                                                             },
                                                             {
                                                               "id": "GovindLalKiran",
-                                                              "name": "Kiran - Damodar Kalani",
-                                                              "nameHindi": "किरण - दामोदर कालानी",
+                                                              "name": "Kiran - Damodar Kalani (Dornakal)",
+                                                              "nameHindi": "किरण - दामोदर कालानी (डोर्नकल)",
                                                               "children": {
                                                                 "childId": "GovindLalKiran-Kids",
                                                                 "childList": []
@@ -577,7 +577,7 @@
                                                 {
                                                   "id": "ChunniRamaBai",
                                                   "name": "Rama Bai - Panna Lal Ji (Chennai)",
-                                                  "nameHindi": "रमा बाई - पन्ना लाल जी (चेन्नई)",
+                                                  "nameHindi": "रामा बाई - पन्ना लाल जी (चेन्नई)",
                                                   "children": {
                                                     "childId": "ChunniRamaBai-Kids",
                                                     "childList": []
@@ -600,7 +600,7 @@
                                                             {
                                                               "id": "BharathRohit",
                                                               "name": "Late. Rohit - Leena (Chaichani - Maheshwari) ",
-                                                              "nameHindi": "स्व. रोहित - लीना (चाईचानी - माहेश्वरी)",
+                                                              "nameHindi": "स्व. रोहित - लीना (चैचानी - माहेश्वरी)",
                                                               "children": {
                                                                 "childId": "BharathRohit-Kids",
                                                                 "childList": [
@@ -744,7 +744,7 @@
                                                       {
                                                         "id": "MohanLalManKanwari",
                                                         "name": "Mankanwari - Nand Kishore Bhattad (Ujjain)",
-                                                        "nameHindi": "मनकंवरी - नंद किशोर भट्टड़ (उज्जैन)",
+                                                        "nameHindi": "मानकंवरी - नंद किशोर भट्टड़ (उज्जैन)",
                                                         "children": {
                                                           "childId": "MohanLalManKanwari-Kids",
                                                           "childList": []
@@ -843,8 +843,8 @@
                                                           "childList": [
                                                             {
                                                               "id": "GovindAnusha",
-                                                              "name": "Anusha - Rohit Ladda (Hyderabad)",
-                                                              "nameHindi": "अनुषा - रोहित लड्डा (हैदराबाद)",
+                                                              "name": "Anusha - Riteshji Ladda (Hyderabad)",
+                                                              "nameHindi": "अनुषा - रितेशजी लड्डा (हैदराबाद)",
                                                               "children": {
                                                                 "childId": "GovindAnusha-Kids",
                                                                 "childList": []
