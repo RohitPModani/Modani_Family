@@ -169,7 +169,7 @@ html, body {
   box-sizing: border-box;
 }
 
-.extra-card h2, p, p {
+.extra-card h3, p{
   margin: 0;
   text-align: center;
   color: #ffffff;
@@ -305,6 +305,7 @@ html, body {
   border-radius: 50%;
   box-shadow: 0 4px 8px var(--shadow-color);
   cursor: pointer;
+  overflow: hidden;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 

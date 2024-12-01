@@ -9,7 +9,7 @@
         *ngFor="let breadcrumb of breadcrumbs; let i = index"
         (click)="navigateToBreadcrumb(i)"
         [class.active]="i === breadcrumbs.length - 1"
-        [id]="'breadcrumb-' + i" 
+        [id]="'breadcrumb-' + i"
       >
         {{ getBreadcrumbMemberName(breadcrumb) }}
       </span>
@@ -44,15 +44,22 @@
 
       <!-- Additional Card for Nand Ram Ji -->
       <div class="extra-card" *ngIf="currentMember?.name === 'Nand Ram Ji'">
-        <h2>
-          {{ isHindi ? 'पता: पुराना पेढ़ी (दुकान)' : 'Address: Old Peddi (Shop)' }}
-        </h2>
+        <h3>
+          {{ isHindi ? 'पुराना पेढ़ी (दुकान)' : 'Old Peddi (Shop)' }}
+        </h3>
         <p>
           {{ isHindi ? 'नंदराम मुलचंद: बंबई' : 'Nandram Mulchand: Bombay' }}
         </p>
         <p>
           {{ isHindi ? 'मय्याराम मुलचंद: बारसी, लातूर, मदनूर (महाराष्ट्र) और हैदराबाद' : 'Mayyaram Mulchand: Barsi, Latur, Madnoor (Maharashtra) & Hyderabad' }}
         </p>
+      </div>
+
+      <!-- Additional Card for Sabla Ji -->
+      <div class="extra-card" *ngIf="currentMember?.name === 'Pukh Lal Ji'">
+        <h3>
+          {{ isHindi ? 'सन् 1879 में बोड़वा से मुंडवा आ गये' : 'In era 1879 shifted from Bodwa to Mundawa' }}
+        </h3>
       </div>
     </div>
   </ng-template>
