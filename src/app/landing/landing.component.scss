@@ -147,6 +147,27 @@
   z-index: 1; /* Ensure it doesn't overlap other elements */
 }
 
+.extra-card {
+  width: 100%; /* Full width of the parent container */
+  max-width: 400px; /* Limit maximum width to 600px */
+  margin: 15px auto; /* Center the card horizontally */
+  padding: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4); /* Slightly dark transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px); /* Frosted glass for Safari */
+  box-sizing: border-box;
+}
+
+.extra-card h3, p{
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
 
 @media (max-height: 600px) {
   .landing-container {
@@ -162,8 +183,13 @@
 }
 
 @media (max-width: 600px) {
-  .landing-card {
+  .landing-card{
     padding: 20px 30px;
     max-width: 90%; /* Allow card to use more space on smaller screens */
+  }
+
+  .extra-card {
+    width: 90%;
+    padding: 15px;
   }
 }
