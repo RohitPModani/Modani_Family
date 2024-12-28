@@ -88,29 +88,6 @@ html, body {
   content: ''; /* Remove the separator for the last item */
 }
 
-/* Card container styling for vertical layout */
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-top: 20px;
-}
-
-/* Connecting vertical lines */
-.card-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  width: 2px;
-  background-color: #ffffff; /* Line color */
-  z-index: -1; /* Place line behind the cards */
-}
-
 .card,
 .child-card {
   width: 100%; /* Full width of the parent container */
@@ -137,12 +114,7 @@ html, body {
   }
 }
 
-.card:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
-}
-
-.child-card:hover {
+.card:hover, .child-card:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
 }
@@ -330,6 +302,7 @@ html, body {
   .family-tree-container .parent-card {
     width: 90%;
   }
+
   .fab {
     height: 45px;
     width: 45px; /* Slightly smaller floating button */

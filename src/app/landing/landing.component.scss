@@ -16,7 +16,7 @@
   gap: 30px; /* Space between toggle and card */
   padding: 20px;
   position: relative; /* Ensures child absolute positioning works */
-  overflow: hidden; /* Prevent content overflow */
+  overflow: auto; /* Prevent content overflow */
   box-sizing: border-box; /* Include padding in width/height calculations */
 }
 
@@ -147,7 +147,7 @@
   z-index: 1; /* Ensure it doesn't overlap other elements */
 }
 
-.extra-card {
+.extra-card, .result-card {
   width: 100%; /* Full width of the parent container */
   max-width: 400px; /* Limit maximum width to 600px */
   margin: 15px auto; /* Center the card horizontally */
@@ -162,12 +162,163 @@
   box-sizing: border-box;
 }
 
-.extra-card h3, p{
+.extra-card, .result-card, h3, p{
   margin: 0;
   text-align: center;
   color: #ffffff;
 }
 
+.result-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  cursor: pointer;
+}
+
+.result-card:hover{
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+/* Add styles for the search tab */
+.search-container {
+  position: absolute; /* Position the container absolutely */
+  top: 20px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for true centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensure it appears above other elements */
+  background: rgba(0, 0, 0, 0.2); /* Slightly dark transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 100%; /* Ensures the width adjusts to content */
+  max-width: 400px; /* Prevents overflow if the content is too wide */
+}
+
+.search-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px var(--shadow-color);
+  outline: none;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: gray;
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: color 0.3s;
+}
+
+.clear-btn:hover {
+  color: black;
+}
+
+
+/* Add styles for search results */
+.results-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card, .child-card{
+  width: 100%; /* Full width of the parent container */
+  max-width: 600px; /* Limit maximum width to 600px */
+  margin: 15px auto; /* Center the card horizontally */
+  padding: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4); /* Slightly dark transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px); /* Frosted glass for Safari */
+  box-sizing: border-box;
+}
+
+.tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tree-container .tree-parent-card{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+}
+
+.tree-container .tree-selected-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  /* Add this to ensure child cards span the full width */
+  width: 100%; /* Ensure the container spans the full width */
+  max-width: 600px;
+}
+
+.tree-container .tree-child-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  /* Add this to ensure child cards span the full width */
+  width: 100%; /* Ensure the container spans the full width */
+  max-width: 600px; /* Match the parent card's max-width */
+}
+
+.tree-container .tree-child-container::before,
+.tree-container .tree-selected-card::before{
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.tree-container .tree-child-container::after,
+.tree-container .tree-selected-card::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+
+.tree-child-container .child-card::before{
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-50%);
+  z-index: 0;
+}
 
 @media (max-height: 600px) {
   .landing-container {
@@ -191,5 +342,14 @@
   .extra-card {
     width: 90%;
     padding: 15px;
+  }
+  .card,
+  .child-card{
+    width: 85%;
+    padding: 15px;
+  }
+
+  .search-container{
+    max-width: 50%;
   }
 }
