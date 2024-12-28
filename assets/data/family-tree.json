@@ -72,15 +72,15 @@
                                                       },
                                                       {
                                                         "id": "GopikishanLakshminivas",
-                                                        "name": "Lakshmi Nivas - Srikantha",
-                                                        "nameHindi": "लक्ष्मी निवास - श्रीकांता",
+                                                        "name": "Lakshmi Nivas - Srikantha (Sarda )",
+                                                        "nameHindi": "लक्ष्मी निवास - श्रीकांता (सारडा)",
                                                         "children": {
                                                           "childId": "GopikishanLakshminivas-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "LakshminivasKumar",
-                                                              "name": "Shri Kumar - Sheetal",
-                                                              "nameHindi": "श्री कुमार - शीतल",
+                                                              "name": "Shri Kumar - Sheetal (Pokhal)",
+                                                              "nameHindi": "श्री कुमार - शीतल (पोखाल)",
                                                               "children": {
                                                                 "childId": "LakshminivasKumar-Kids",
                                                                 "childList": [
@@ -107,8 +107,8 @@
                                                             },
                                                             {
                                                               "id": "LakshminivasManish",
-                                                              "name": "Manish - Reetu",
-                                                              "nameHindi": "मनीष- रीतू",
+                                                              "name": "Manish - Reetu (Jhanwar)",
+                                                              "nameHindi": "मनीष- रीतू (झंवर)",
                                                               "children": {
                                                                 "childId": "LakshminivasManish-Kids",
                                                                 "childList": [
@@ -135,8 +135,8 @@
                                                             },
                                                             {
                                                               "id": "LakshminivasRajani",
-                                                              "name": "Rajani",
-                                                              "nameHindi": "रजनी",
+                                                              "name": "Rajani - Narendra Ji Fofalia (Mumbai)",
+                                                              "nameHindi": "रजनी - नरेंद्र जी फ़ोफ़लिया (मुंबई)",
                                                               "children": {
                                                                 "childId": "LakshminivasRajani-Kids",
                                                                 "childList": []
@@ -147,15 +147,15 @@
                                                       },
                                                       {
                                                         "id": "GopikishanShrigopal",
-                                                        "name": "Shri Gopal - Shobha",
-                                                        "nameHindi": "श्री गोपाल - शोभा",
+                                                        "name": "Shri Gopal - Shobha (Jhanwar)",
+                                                        "nameHindi": "श्री गोपाल - शोभा (झंवर)",
                                                         "children": {
                                                           "childId": "GopikishanShrigopal-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "ShrigopalSonika",
-                                                              "name": "Sonika",
-                                                              "nameHindi": "सोनिका",
+                                                              "name": "Sonika - Deepak Sarda (Hyderabad)",
+                                                              "nameHindi": "सोनिका - दीपक सारडा (हैद्राबाद)",
                                                               "children": {
                                                                 "childId": "ShrigopalSonika-Kids",
                                                                 "childList": []
@@ -163,8 +163,8 @@
                                                             },
                                                             {
                                                               "id": "ShrigopalMonika",
-                                                              "name": "Monika",
-                                                              "nameHindi": "मोनिका",
+                                                              "name": "Monika - Sandeep Kalani (Hyderabad)",
+                                                              "nameHindi": "मोनिका - संदीप कालानी (हैद्राबाद)",
                                                               "children": {
                                                                 "childId": "ShrigopalMonika-Kids",
                                                                 "childList": []
@@ -172,8 +172,8 @@
                                                             },
                                                             {
                                                               "id": "ShrigopalVishal",
-                                                              "name": "Vishal - Chandani",
-                                                              "nameHindi": "विशाल - चांदनी",
+                                                              "name": "Vishal - Chandani  (Rathi)",
+                                                              "nameHindi": "विशाल - चांदनी (राठी)",
                                                               "children": {
                                                                 "childId": "ShrigopalVishal-Kids",
                                                                 "childList": [
@@ -203,15 +203,15 @@
                                                       },
                                                       {
                                                         "id": "GopikishanSampatkumar",
-                                                        "name": "Sampat Kumar - Santosh",
-                                                        "nameHindi": "संपतकुमार- संतोष",
+                                                        "name": "Sampat Kumar - Santosh (Marda)",
+                                                        "nameHindi": "संपतकुमार- संतोष (मर्दा)",
                                                         "children": {
                                                           "childId": "GopikishanSampatkumar-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "SampatRajesh",
-                                                              "name": "Rajesh - Pooja",
-                                                              "nameHindi": "राजेश - पूजा",
+                                                              "name": "Rajesh - Pooja (Rathi)",
+                                                              "nameHindi": "राजेश - पूजा (राठी)",
                                                               "children": {
                                                                 "childId": "SampatRajesh-Kids",
                                                                 "childList": [
@@ -259,8 +259,8 @@
                                                       },
                                                       {
                                                         "id": "GopikishanKantha",
-                                                        "name": "Kantha",
-                                                        "nameHindi": "कान्ता",
+                                                        "name": "Kantha - Lakshmi Nivas Dhoot (Mumbai)",
+                                                        "nameHindi": "कान्ता - लक्ष्मी निवास धूत (मुंबई)",
                                                         "children": {
                                                           "childId": "GopikishanKantha-Kids",
                                                           "childList": []
@@ -271,8 +271,8 @@
                                                 },
                                                 {
                                                   "id": "RamratanGovardhan",
-                                                  "name": "Govardhan Das Ji",
-                                                  "nameHindi": "गोवर्धन दास जी",
+                                                  "name": "Govardhan Das Ji - Atiraj (Bhattad)",
+                                                  "nameHindi": "गोवर्धन दास जी - अतीराज (भट्टड़)",
                                                   "children": {
                                                     "childId": "RamratanGovardhan-Kids",
                                                     "childList": [
@@ -588,40 +588,69 @@
                                                   }
                                                 },
                                                 {
-                                                  "id": "RamratanSrivallabh",
-                                                  "name": "Srivallabh Ji",
-                                                  "nameHindi": "श्रीवल्लभ जी",
+                                                  "id": "RamratanShreevallabh",
+                                                  "name": "Shreevallabh Ji - Sarla Devi (Damani)",
+                                                  "nameHindi": "श्रीवल्लभ जी - सरला देवी (दामानी)",
                                                   "children": {
-                                                    "childId": "RamratanSrivallabh-Kids",
+                                                    "childId": "RamratanShreevallabh-Kids",
                                                     "childList": [
                                                       {
-                                                        "id": "SrivallabhRamavatar",
-                                                        "name": "Ramavatar",
-                                                        "nameHindi": "रामावतार",
+                                                        "id": "ShreevallabhRamavatar",
+                                                        "name": "Ramavatar - Renu Devi (Dhoot)",
+                                                        "nameHindi": "रामावतार - रेणु देवी (धूत)",
                                                         "children": {
-                                                          "childId": "SrivallabhRamavatar-Kids",
+                                                          "childId": "ShreevallabhRamavatar-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "RamavatarVishnuNarayan",
-                                                              "name": "Vishnu Narayan",
-                                                              "nameHindi": "विष्णु नारायण",
+                                                              "name": "Vishnu Narayan - Nilima (Jain)",
+                                                              "nameHindi": "विष्णु नारायण - निलिमा (जैन)",
                                                               "children": {
                                                                 "childId": "RamavatarVishnuNarayan-Kids",
-                                                                "childList": []
+                                                                "childList": [
+                                                                  {
+                                                                    "id": "VishnuNarayanSaanvi",
+                                                                    "name": "Saanvi",
+                                                                    "nameHindi": "सानवी",
+                                                                    "children": {
+                                                                      "childId": "VishnuNarayanSaanvi-Kids",
+                                                                      "childList": []
+                                                                    }
+                                                                  }
+                                                                ]
                                                               }
                                                             },
                                                             {
                                                               "id": "RamavatarLakshmiNarayan",
-                                                              "name": "Lakshmi Narayan",
-                                                              "nameHindi": "लक्ष्मी नारायण",
+                                                              "name": "Lakshmi Narayan - Koyal (Loya)",
+                                                              "nameHindi": "लक्ष्मी नारायण - कोयल (लोया)",
                                                               "children": {
                                                                 "childId": "RamavatarLakshmiNarayan-Kids",
-                                                                "childList": []
+                                                                "childList": [
+                                                                  {
+                                                                    "id": "LakshmiNarayanYatee",
+                                                                    "name": "Yatee",
+                                                                    "nameHindi": "यती",
+                                                                    "children": {
+                                                                      "childId": "LakshmiNarayanYatee-Kids",
+                                                                      "childList": []
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "id": "LakshmiNarayanVihaan",
+                                                                    "name": "Vihaan",
+                                                                    "nameHindi": "विहान",
+                                                                    "children": {
+                                                                      "childId": "LakshmiNarayanVihaan-Kids",
+                                                                      "childList": []
+                                                                    }
+                                                                  }
+                                                                ]
                                                               }
                                                             },
                                                             {
                                                               "id": "RamavatarShrinarayan",
-                                                              "name": "Shrinarayan",
+                                                              "name": "Shreenarayan",
                                                               "nameHindi": "श्रीनारायण",
                                                               "children": {
                                                                 "childId": "RamavatarShrinarayan-Kids",
@@ -632,11 +661,11 @@
                                                         }
                                                       },
                                                       {
-                                                        "id": "RamratanSrivallabhJugalKishore",
-                                                        "name": "Jugal Kishore",
-                                                        "nameHindi": "जुगल किशोर",
+                                                        "id": "RamratanShreevallabhJugalKishore",
+                                                        "name": "Jugal Kishore - Radhika Devi (Somani)",
+                                                        "nameHindi": "जुगल किशोर - राधिका देवी (सोमाणी)",
                                                         "children": {
-                                                          "childId": "RamratanSrivallabhJugalKishore-Kids",
+                                                          "childId": "RamratanShreevallabhJugalKishore-Kids",
                                                           "childList": [
                                                             {
                                                               "id": "JugalkishoreShivNarayan",
@@ -875,8 +904,8 @@
                                     },
                                     {
                                       "id": "SaalagJethamalJi",
-                                      "name": "Jethamal Ji - Shrinari Devi",
-                                      "nameHindi": "जेठमल जी - श्रीनारी देवी",
+                                      "name": "Jethamal Ji - Shringari Devi",
+                                      "nameHindi": "जेठमल जी - श्रींगरी देवी",
                                       "children": {
                                         "childId": "SaalagJethamalJi-Kids",
                                         "childList": [
@@ -896,8 +925,8 @@
                                                     "childList": [
                                                       {
                                                         "id": "MohanlalMangatiramJi",
-                                                        "name": "Mangatiram Ji",
-                                                        "nameHindi": "मंगतीराम जी",
+                                                        "name": "Manganiram Ji",
+                                                        "nameHindi": "मंगनीराम जी",
                                                         "children": {
                                                           "childId": "MohanlalMangatiramJi-Kids",
                                                           "childList": [
@@ -912,8 +941,8 @@
                                                             },
                                                             {
                                                               "id": "MangiramNarender",
-                                                              "name": "Late. Narendra",
-                                                              "nameHindi": "स्व. नरेंद्र",
+                                                              "name": "Narendra",
+                                                              "nameHindi": "नरेंद्र",
                                                               "children": {
                                                                 "childId": "MangiramNarender-Kids",
                                                                 "childList": []
@@ -1325,8 +1354,8 @@
                                           },
                                           {
                                             "id": "JethamalRamkishanJi",
-                                            "name": "Ram Kishan Ji",
-                                            "nameHindi": "राम किशन जी",
+                                            "name": "Ram Kishan Ji - Jamuna Devi / Ajyodhya Devi",
+                                            "nameHindi": "राम किशन जी - जमुना देवी / अज्योध्या देवी",
                                             "children": {
                                               "childId": "JethamalRamkishanJi-Kids",
                                               "childList": [
@@ -1420,8 +1449,8 @@
                                                             },
                                                             {
                                                               "id": "TulsiramKiran",
-                                                              "name": "Kiran",
-                                                              "nameHindi": "किरण",
+                                                              "name": "Late. Kiran",
+                                                              "nameHindi": "स्व. किरण",
                                                               "children": {
                                                                 "childId": "TulsiramKiran-Kids",
                                                                 "childList": []
@@ -2271,8 +2300,8 @@
                                                       },
                                                       {
                                                         "id": "RamKunwarGangaBai",
-                                                        "name": "Ganga Bai Jaju (Bengaluru)",
-                                                        "nameHindi": "गंगा बाई जाजू (बेंगलुरु)",
+                                                        "name": "Ganga Bai - Pooranmal Ji Jaju (Bengaluru)",
+                                                        "nameHindi": "गंगा बाई - पूरणमल जी जाजू (बेंगलुरु)",
                                                         "children": {
                                                           "childId": "RamKunwarGangaBai-Kids",
                                                           "childList": []
@@ -2280,8 +2309,8 @@
                                                       },
                                                       {
                                                         "id": "RamKunwarAjodhyaBai",
-                                                        "name": "Ajodhya Bai Jaju (Bengaluru)",
-                                                        "nameHindi": "अजोध्या बाई जाजू (बेंगलुरु)",
+                                                        "name": "Ajodhya Bai - Badrinarayan Ji Jaju (Bengaluru)",
+                                                        "nameHindi": "अजोध्या बाई - बद्रीनारायण जी जाजू (बेंगलुरु)",
                                                         "children": {
                                                           "childId": "RamKunwarAjodhyaBai-Kids",
                                                           "childList": []
