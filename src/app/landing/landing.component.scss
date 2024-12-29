@@ -171,11 +171,11 @@
 .result-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
   cursor: pointer;
-}
-
-.result-card:hover{
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+  &:hover {
+    transform: var(--hover-scale);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  }
 }
 
 /* Add styles for the search tab */
@@ -193,9 +193,13 @@
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
   width: 100%; /* Ensures the width adjusts to content */
   max-width: 400px; /* Prevents overflow if the content is too wide */
+
+  input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(52, 73, 94, 0.5); /* Focus highlight */
+  }
 }
 
 .search-input {
@@ -223,13 +227,13 @@
   color: black;
 }
 
-
-/* Add styles for search results */
 .results-container {
-  margin-top: 20px;
+  margin-top: 70px; /* Add space below the fixed search container */
+  padding: 20px; /* Ensure padding around results */
   display: flex;
   flex-direction: column;
   gap: 10px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .card, .child-card{
