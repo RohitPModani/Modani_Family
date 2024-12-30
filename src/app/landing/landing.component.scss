@@ -195,11 +195,6 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   width: 100%; /* Ensures the width adjusts to content */
   max-width: 400px; /* Prevents overflow if the content is too wide */
-
-  input:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 4px 10px rgba(52, 73, 94, 0.5); /* Focus highlight */
-  }
 }
 
 .search-input {
