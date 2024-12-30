@@ -40,7 +40,14 @@ export class LandingComponent implements OnInit {
   toggleLanguage(event: any) {
     this.isHindi = event.target.checked;
     localStorage.setItem('language', this.isHindi ? 'Hindi' : 'English');
+
+    // Reload the dictionary with the selected language
+    if (this.familyTree) {
+      this.familyDictionary.clear(); // Clear previous dictionary
+      this.populateDictionary(this.familyTree);
+    }
   }
+
 
   navigateToFamilyTree() {
     this.router.navigate(['/family']);
@@ -71,6 +78,8 @@ export class LandingComponent implements OnInit {
 
     if (query.length > 3) {
       this.clearTreeDisplay();
+
+      // Use Hindi or English names based on the language flag
       this.searchResults = Array.from(this.familyDictionary.entries())
         .filter(([id, name]) => name.toLowerCase().includes(query))
         .map(([id, name]) => ({ id, name }));
@@ -89,8 +98,11 @@ export class LandingComponent implements OnInit {
   }
 
   private populateDictionary(node: any): void {
-    if (node && node.id && node.name) {
-      this.familyDictionary.set(node.id, node.name);
+    if (node && node.id) {
+      const name = this.isHindi ? node.nameHindi : node.name;
+      if (name) {
+        this.familyDictionary.set(node.id, name);
+      }
     }
 
     if (node.children && node.children.childList) {
@@ -114,11 +126,22 @@ export class LandingComponent implements OnInit {
   private findPersonById(node: any, id: string, parent: any = null): void {
     if (node.id === id) {
       // Set the selected person and their parent
-      this.selectedPerson = node;
-      this.parentPerson = parent;
+      this.selectedPerson = {
+        ...node,
+        displayName: this.isHindi ? node.nameHindi || node.name : node.name, // Fallback to English if Hindi name is unavailable
+      };
+      this.parentPerson = parent
+        ? {
+            ...parent,
+            displayName: this.isHindi ? parent.nameHindi || parent.name : parent.name,
+          }
+        : null;
 
-      // Get child nodes
-      this.childPersons = node.children?.childList || [];
+      // Set child nodes with display names based on the language
+      this.childPersons = (node.children?.childList || []).map((child: any) => ({
+        ...child,
+        displayName: this.isHindi ? child.nameHindi || child.name : child.name,
+      }));
     } else if (node.children && node.children.childList) {
       // Recursively search in children
       for (const child of node.children.childList) {

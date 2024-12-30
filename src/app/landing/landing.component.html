@@ -1,6 +1,6 @@
 <div class="landing-container">
   <!-- Language Toggle Section -->
-  <div class="language-toggle">
+  <div *ngIf="!isSearchMode" class="language-toggle">
     <label class="switch">
       <input
         type="checkbox"
@@ -47,16 +47,16 @@
 
   <div *ngIf="selectedPerson" class="tree-container">
     <div *ngIf="parentPerson" class="card tree-parent-card">
-      <h3>{{ parentPerson.name}}</h3>
+      <h3>{{ parentPerson.displayName}}</h3>
     </div>
 
     <div class="card tree-selected-card">
-      <h3>{{selectedPerson.name}}</h3>
+      <h3>{{selectedPerson.displayName}}</h3>
     </div>
 
     <div *ngIf="childPersons.length > 0" class="tree-child-container">
       <div class="child-card" *ngFor="let child of childPersons">
-        <h3>{{ child.name }}</h3>
+        <h3>{{ child.displayName }}</h3>
       </div>
     </div>
   </div>
