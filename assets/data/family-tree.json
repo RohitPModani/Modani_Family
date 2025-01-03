@@ -79,8 +79,8 @@
                                                           "childList": [
                                                             {
                                                               "id": "LakshminivasKumar",
-                                                              "name": "Shri Kumar - Sheetal (Pokhal)",
-                                                              "nameHindi": "श्री कुमार - शीतल (पोखाल)",
+                                                              "name": "Shri Kumar - Sheetal (Porwal)",
+                                                              "nameHindi": "श्री कुमार - शीतल (पोरवाल)",
                                                               "children": {
                                                                 "childId": "LakshminivasKumar-Kids",
                                                                 "childList": [
@@ -578,7 +578,7 @@
                                                       {
                                                         "id": "ShyamSunderSangeetha",
                                                         "name": "Sangeetha - Surendar Ji Bajaj (Hyderabad)",
-                                                        "nameHindi": "संगीता - सुरेंद्र जी बजाज (हैदराबाद)",
+                                                        "nameHindi": "संगीता - सुरेंद्र जी बजाज (हैद्राबाद)",
                                                         "children": {
                                                           "childId": "ShyamSunderSangeetha-Kids",
                                                           "childList": []
@@ -590,7 +590,7 @@
                                                 {
                                                   "id": "RamratanShreevallabh",
                                                   "name": "Shreevallabh Ji - Sarla Devi (Damani)",
-                                                  "nameHindi": "श्रीवल्लभ जी - सरला देवी (दामानी)",
+                                                  "nameHindi": "श्रीवल्लभ जी - सरला देवी (दम्मानी)",
                                                   "children": {
                                                     "childId": "RamratanShreevallabh-Kids",
                                                     "childList": [
@@ -1878,7 +1878,7 @@
                                                                   {
                                                                     "id": "OmPrakashMeena",
                                                                     "name": "Meena - Pavan Navander (Hyderabad)",
-                                                                    "nameHindi": "मीना - पवन नावंदर (हैदराबाद)",
+                                                                    "nameHindi": "मीना - पवन नावंदर (हैद्राबाद)",
                                                                     "children": {
                                                                       "childId": "OmPrakashMeena-Kids",
                                                                       "childList": []
@@ -1896,7 +1896,7 @@
                                                                   {
                                                                     "id": "OmPrakashPoonam",
                                                                     "name": "Poonam - Aditya Naraniya ( Hyderabad)",
-                                                                    "nameHindi": "पूनम-आदित्य नरानिया (हैदराबाद)",
+                                                                    "nameHindi": "पूनम-आदित्य नरानिया (हैद्राबाद)",
                                                                     "children": {
                                                                       "childId": "OmPrakashPoonam-Kids",
                                                                       "childList": []
@@ -1961,7 +1961,7 @@
                                                                   {
                                                                     "id": "JugalKishoreSwathi",
                                                                     "name": "Swathi - Mahesh Jaju (Hyderabad)",
-                                                                    "nameHindi": "स्वाति - महेश जाजू (हैदराबाद)",
+                                                                    "nameHindi": "स्वाति - महेश जाजू (हैद्राबाद)",
                                                                     "children": {
                                                                       "childId": "JugalKishoreSwathi-Kids",
                                                                       "childList": []
@@ -1998,7 +1998,7 @@
                                                                   {
                                                                     "id": "LakshmikantPriyanka",
                                                                     "name": "Priyanka - Aman Chaudhari (Hyderabad)",
-                                                                    "nameHindi": "प्रियंका - अमन चौधरी (हैदराबाद)",
+                                                                    "nameHindi": "प्रियंका - अमन चौधरी (हैद्राबाद)",
                                                                     "children": {
                                                                       "childId": "LakshmikantPriyanka-Kids",
                                                                       "childList": []
@@ -2500,7 +2500,7 @@
                                                 {
                                                   "id": "ChunniKamalaBai",
                                                   "name": "Kamala Bai - Uday Ram Ji Bharadia (Hyderabad)",
-                                                  "nameHindi": "कमला बाई - उदय राम जी भराडिया (हैदराबाद)",
+                                                  "nameHindi": "कमला बाई - उदय राम जी भराडिया (हैद्राबाद)",
                                                   "children": {
                                                     "childId": "ChunniKamalaBai-Kids",
                                                     "childList": []
@@ -2551,7 +2551,7 @@
                                                             {
                                                               "id": "RamKishoreArchana",
                                                               "name": "Archana - Shankarlal Attal (Hyderabad)",
-                                                              "nameHindi": "अर्चना - शंकरलाल अट्टल (हैदराबाद)",
+                                                              "nameHindi": "अर्चना - शंकरलाल अट्टल (हैद्राबाद)",
                                                               "children": {
                                                                 "childId": "RamKishoreArchana-Kids",
                                                                 "childList": []
@@ -2609,7 +2609,7 @@
                                                       {
                                                         "id": "MohanLalSrikantha",
                                                         "name": "Srikantha - Lakshmi Nivas Chitlangya (Hyderabad)",
-                                                        "nameHindi": "श्रीकांता - लक्ष्मी निवास चितलांग्या (हैदराबाद)",
+                                                        "nameHindi": "श्रीकांता - लक्ष्मी निवास चितलांग्या (हैद्राबाद)",
                                                         "children": {
                                                           "childId": "MohanLalSrikantha-Kids",
                                                           "childList": []
@@ -2635,7 +2635,7 @@
                                                             {
                                                               "id": "GovindAnusha",
                                                               "name": "Anusha - Ritesh Ladda (Hyderabad)",
-                                                              "nameHindi": "अनुषा - रितेश लड्डा (हैदराबाद)",
+                                                              "nameHindi": "अनुषा - रितेश लड्डा (हैद्राबाद)",
                                                               "children": {
                                                                 "childId": "GovindAnusha-Kids",
                                                                 "childList": []
