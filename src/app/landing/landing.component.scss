@@ -168,16 +168,6 @@
   color: #ffffff;
 }
 
-.result-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-  cursor: pointer;
-  &:hover {
-    transform: var(--hover-scale);
-    background: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
-  }
-}
-
 /* Add styles for the search tab */
 .search-container {
   position: absolute; /* Position the container absolutely */
@@ -253,6 +243,11 @@
   position: relative;
   overflow: auto;
   margin-top: 60px;
+  scrollbar-width: none; /* For Firefox: Hides the scrollbar */
+}
+
+.tree-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Edge, Safari: Hides the scrollbar */
 }
 
 .tree-container .tree-parent-card{
@@ -319,6 +314,11 @@
   background-color: rgba(255, 255, 255, 0.5);
   transform: translateX(-50%);
   z-index: 0;
+}
+
+.tree-parent-card:hover, .child-card:hover, .result-card:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  cursor: pointer
 }
 
 @media (max-height: 600px) {

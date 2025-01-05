@@ -29,6 +29,32 @@
     </div>
   </div>
 
+  <div *ngIf="selectedPerson" class="tree-container">
+    <div *ngIf="parentPerson" class="card tree-parent-card" (click)="onResultClick(parentPerson)">
+      <h3>{{ parentPerson.displayName}}</h3>
+    </div>
+
+    <div class="card tree-selected-card">
+      <h3>{{selectedPerson.displayName}}</h3>
+    </div>
+
+    <div *ngIf="childPersons.length > 0" class="tree-child-container">
+      <div class="child-card" *ngFor="let child of childPersons" (click)="onResultClick(child)">
+        <h3>{{ child.displayName }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Results -->
+  <div *ngIf="isSearchMode && searchResults.length > 0" class="results-container">
+    <div
+      *ngFor="let result of searchResults"
+      class="result-card"
+      (click)="onResultClick(result)">
+      <h3>{{ result.name }}</h3>
+    </div>
+  </div>
+
   <!-- Landing Card -->
   <div *ngIf="!isSearchMode" class="landing-card" (click)="navigateToFamilyTree()">
     <h1>
@@ -43,32 +69,6 @@
       <span>{{ isHindi ? 'कुल देवी - चामुँडा माताजी' : 'Kul Devi - Chamunda Mataji ' }}</span><br />
       <span>{{ isHindi ? 'साडांस गोत्र' : 'Saadaans Gotra' }}</span>
     </h3>
-  </div>
-
-  <div *ngIf="selectedPerson" class="tree-container">
-    <div *ngIf="parentPerson" class="card tree-parent-card">
-      <h3>{{ parentPerson.displayName}}</h3>
-    </div>
-
-    <div class="card tree-selected-card">
-      <h3>{{selectedPerson.displayName}}</h3>
-    </div>
-
-    <div *ngIf="childPersons.length > 0" class="tree-child-container">
-      <div class="child-card" *ngFor="let child of childPersons">
-        <h3>{{ child.displayName }}</h3>
-      </div>
-    </div>
-  </div>
-
-  <!-- Search Results -->
-  <div *ngIf="isSearchMode && searchResults.length > 0" class="results-container">
-    <div
-      *ngFor="let result of searchResults"
-      class="result-card"
-      (click)="onResultClick(result)">
-      <h3>{{ result.name }}</h3>
-    </div>
   </div>
 
   <!-- Footer Section -->
